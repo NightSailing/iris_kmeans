@@ -159,7 +159,7 @@ def plot_iris2(i,j, C):
 	subplot.set_yticks([])
 
 def main():
-    cluster_index, means = create_clustering(3, iris.data, 10)
+    cluster_index, means = create_clustering(3, iris.data, 1000)
     print cluster_index
     plot_iris(cluster_index)
     plt.savefig("iris_clustering.png")
